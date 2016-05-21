@@ -33,6 +33,8 @@ $CC $OPT $SHARED -DLDPK_COMPILE_AS_PLUGIN_SDV $INCPATH tde4_ldp_anamorphic_deg_4
 $CC $OPT $SHARED -DLDPK_COMPILE_AS_PLUGIN_SDV $INCPATH tde4_ldp_anamorphic_deg_6.C -o ../../lib/tde4_ldp_anamorphic_deg_6.so
 # Model "3DE4 Radial - Standard, Degree 4"
 $CC $OPT $SHARED -DLDPK_COMPILE_AS_PLUGIN_SDV $INCPATH tde4_ldp_radial_decentered_deg_4_cylindric.C -o ../../lib/tde4_ldp_radial_decentered_deg_4_cylindric.so
+# Model "3DE4 blender"
+$CC $OPT $SHARED -DLDPK_COMPILE_AS_PLUGIN_SDV $INCPATH tde4_ldp_blender.C -o ../../lib/tde4_ldp_blender.so
 
 # Model "3DE4 All Parameter Types"
 $CC $OPT $SHARED -DLDPK_COMPILE_AS_PLUGIN_SDV $INCPATH tde4_ldp_all_par_types.C -o ../../lib/tde4_ldp_all_par_types.so

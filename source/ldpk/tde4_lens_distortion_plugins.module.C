@@ -1,6 +1,6 @@
 // This file is part of the Lens Distortion Plugin Kit
 // Software is provided "as is" - no warranties implied.
-// (C) 2011,2012,2013,2014,2015,2016 - Science-D-Visions. Current version: 1.9.2
+// (C) 2011,2012,2013,2014,2015,2016 - Science-D-Visions. Current version: 1.9.1
 
 
 #include <Python.h>
@@ -12,6 +12,7 @@
 #include <ldpk/tde4_ldp_radial_decentered_deg_4_cylindric.h>
 #include <ldpk/tde4_ldp_classic_3de_mixed.h>
 #include <ldpk/tde4_ldp_all_par_types.h>
+#include <ldpk/tde4_ldp_blender.h>
 
 // Python produces these warnings.
 #pragma GCC diagnostic ignored "-Wwrite-strings"
@@ -66,6 +67,12 @@ static int all_par_types(tde4_ldp_py_wrapper *self, PyObject *args, PyObject *kw
 	self->_ldm = new tde4_ldp_all_par_types<ldpk::vec2d,ldpk::mat2d>();
 	return 0;
 	}
+static int blender(tde4_ldp_py_wrapper *self, PyObject *args, PyObject *kwds)
+	{
+	self->_ldm = new tde4_ldp_blender<ldpk::vec2d,ldpk::mat2d>();
+	return 0;
+	}
+
 /*********************************/
 
 static void ldm_dealloc(tde4_ldp_py_wrapper* self)
@@ -706,6 +713,48 @@ static PyTypeObject classic_3de_mixed_Type = {
 	ldm_new,                 /* tp_new */
 	};
 
+static PyTypeObject blender_Type = {
+	PyObject_HEAD_INIT(NULL)
+	0,                         /*ob_size*/
+	"lens_distortion_plugins.tde4_ldp_py_wrapper",             /*tp_name*/
+	sizeof(tde4_ldp_py_wrapper),             /*tp_basicsize*/
+	0,                         /*tp_itemsize*/
+	(destructor)ldm_dealloc, /*tp_dealloc*/
+	0,                         /*tp_print*/
+	0,                         /*tp_getattr*/
+	0,                         /*tp_setattr*/
+	0,                         /*tp_compare*/
+	0,                         /*tp_repr*/
+	0,                         /*tp_as_number*/
+	0,                         /*tp_as_sequence*/
+	0,                         /*tp_as_mapping*/
+	0,                         /*tp_hash */
+	0,                         /*tp_call*/
+	0,                         /*tp_str*/
+	0,                         /*tp_getattro*/
+	0,                         /*tp_setattro*/
+	0,                         /*tp_as_buffer*/
+	Py_TPFLAGS_DEFAULT | Py_TPFLAGS_BASETYPE, /*tp_flags*/
+	"tde4_ldp_py_wrapper objects",           /* tp_doc */
+	0,		               /* tp_traverse */
+	0,		               /* tp_clear */
+	0,		               /* tp_richcompare */
+	0,		               /* tp_weaklistoffset */
+	0,		               /* tp_iter */
+	0,		               /* tp_iternext */
+	ldm_methods,             /* tp_methods */
+	ldm_members,             /* tp_members */
+	0,                         /* tp_getset */
+	0,                         /* tp_base */
+	0,                         /* tp_dict */
+	0,                         /* tp_descr_get */
+	0,                         /* tp_descr_set */
+	0,                         /* tp_dictoffset */
+	(initproc)blender,      /* tp_init */
+	0,                         /* tp_alloc */
+	ldm_new,                 /* tp_new */
+	};
+	
 static PyTypeObject all_par_types_Type = {
 	PyObject_HEAD_INIT(NULL)
 	0,                         /*ob_size*/
@@ -769,6 +818,9 @@ PyMODINIT_FUNC initlens_distortion_plugins(void)
 		return;
 	if (PyType_Ready(&classic_3de_mixed_Type) < 0)
 		return;
+	if (PyType_Ready(&blender_Type) < 0)
+		return;
+
 	if (PyType_Ready(&all_par_types_Type) < 0)
 		return;
 
@@ -798,6 +850,9 @@ PyMODINIT_FUNC initlens_distortion_plugins(void)
 
 	Py_INCREF(&classic_3de_mixed_Type);
 	PyModule_AddObject(m,"classic_3de_mixed",			(PyObject *)&classic_3de_mixed_Type);
+
+	Py_INCREF(&blender_Type);
+	PyModule_AddObject(m,"blender",			(PyObject *)&blender_Type);
 
 	Py_INCREF(&all_par_types_Type);
 	PyModule_AddObject(m,"any_ldm",					(PyObject *)&all_par_types_Type);
