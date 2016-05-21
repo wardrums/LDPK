@@ -1,0 +1,18 @@
+Python bindings are new in version 1.6.
+
+There is a precompiled module named lens_distortion_plugins.so
+in directory linux or osx. When you import this module, you have
+access to the five built-in lens distortion plugins. The python
+online help will give you some details how to use it, and there
+is a test program test_lens_distortion_plugins.py. If the python
+version or OS version do not meet your requirements please compile
+the module yourself (not difficult), starting with the make-scripts
+in $LDPK/script.
+
+If you have questions or want to report a bug, please write to
+
+uwe@sci-d-vis.com
+
+Thanks,
+
+Uwe

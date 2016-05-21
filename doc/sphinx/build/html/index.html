@@ -1,0 +1,423 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Python bindings for LDPK &mdash; Python bindings for LDPK 1.7 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Python bindings for LDPK 1.7 documentation" href="#" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li><a href="#">Python bindings for LDPK 1.7 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="python-bindings-for-ldpk">
+<h1>Python bindings for LDPK<a class="headerlink" href="#python-bindings-for-ldpk" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+<span class="target" id="module-lens_distortion_plugins"></span></div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><em>Index</em></a></li>
+<li><a class="reference internal" href="search.html"><em>Search Page</em></a></li>
+</ul>
+</div>
+<div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>The Lens Distortion Plugin Kit (LDPK) provides a python module which allows to use the five
+built-in lens distortion models in python. When we use this module, we import it this way:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">lens_distortion_plugins</span> <span class="kn">as</span> <span class="nn">ldp</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="classes">
+<h1>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h1>
+<p>There is a class for each of the five built-in lens distortion models.
+The python classes are:</p>
+<dl class="attribute">
+<dt id="lens_distortion_plugins.anamorphic_deg_6">
+<tt class="descclassname">lens_distortion_plugins.</tt><tt class="descname">anamorphic_deg_6</tt><a class="headerlink" href="#lens_distortion_plugins.anamorphic_deg_6" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <tt class="xref py py-class docutils literal"><span class="pre">tde4_ldp_py_wrapper</span></tt></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="lens_distortion_plugins.anamorphic_deg_4_rotate_squeeze_xy">
+<tt class="descclassname">lens_distortion_plugins.</tt><tt class="descname">anamorphic_deg_4_rotate_squeeze_xy</tt><a class="headerlink" href="#lens_distortion_plugins.anamorphic_deg_4_rotate_squeeze_xy" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <tt class="xref py py-class docutils literal"><span class="pre">tde4_ldp_py_wrapper</span></tt></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="lens_distortion_plugins.radial_deg_8">
+<tt class="descclassname">lens_distortion_plugins.</tt><tt class="descname">radial_deg_8</tt><a class="headerlink" href="#lens_distortion_plugins.radial_deg_8" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <tt class="xref py py-class docutils literal"><span class="pre">tde4_ldp_py_wrapper</span></tt></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="lens_distortion_plugins.radial_decentered_deg_4_cylindric">
+<tt class="descclassname">lens_distortion_plugins.</tt><tt class="descname">radial_decentered_deg_4_cylindric</tt><a class="headerlink" href="#lens_distortion_plugins.radial_decentered_deg_4_cylindric" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <tt class="xref py py-class docutils literal"><span class="pre">tde4_ldp_py_wrapper</span></tt></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="lens_distortion_plugins.classic_3de_mixed">
+<tt class="descclassname">lens_distortion_plugins.</tt><tt class="descname">classic_3de_mixed</tt><a class="headerlink" href="#lens_distortion_plugins.classic_3de_mixed" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <tt class="xref py py-class docutils literal"><span class="pre">tde4_ldp_py_wrapper</span></tt></p>
+</dd></dl>
+
+<p>The human-readable name as it appears in 3DE4 is given by the method</p>
+<dl class="method">
+<dt id="lens_distortion_plugins.any_ldm.getModelName">
+<tt class="descclassname">any_ldm.</tt><tt class="descname">getModelName</tt><big>(</big><big>)</big><a class="headerlink" href="#lens_distortion_plugins.any_ldm.getModelName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Signature: getModelName() -&gt; string.
+Name of distortion model as in 3DE4&#8217;s GUI.</p>
+</dd></dl>
+
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">ldp</span><span class="o">.</span><span class="n">anamorphic_deg_6</span><span class="p">()</span><span class="o">.</span><span class="n">getModelName</span><span class="p">()</span>
+<span class="go">3DE4 Anamorphic, Degree 6</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">ldp</span><span class="o">.</span><span class="n">anamorphic_deg_4_rotate_squeeze_xy</span><span class="p">()</span><span class="o">.</span><span class="n">getModelName</span><span class="p">()</span>
+<span class="go">3DE4 Anamorphic - Standard, Degree 4</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">ldp</span><span class="o">.</span><span class="n">radial_deg_8</span><span class="p">()</span><span class="o">.</span><span class="n">getModelName</span><span class="p">()</span>
+<span class="go">3DE4 Radial - Fisheye, Degree 8</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">ldp</span><span class="o">.</span><span class="n">radial_decentered_deg_4_cylindric</span><span class="p">()</span><span class="o">.</span><span class="n">getModelName</span><span class="p">()</span>
+<span class="go">3DE4 Radial - Standard, Degree 4</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">ldp</span><span class="o">.</span><span class="n">classic_3de_mixed</span><span class="p">()</span><span class="o">.</span><span class="n">getModelName</span><span class="p">()</span>
+<span class="go">3DE Classic LD Model</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="parameter-name">
+<h1>Parameter name<a class="headerlink" href="#parameter-name" title="Permalink to this headline">¶</a></h1>
+<p>Parameters are addressed by their (human-readable) names. The following method maps the index
+into the parameter name:</p>
+<dl class="method">
+<dt id="lens_distortion_plugins.any_ldm.getParameterName">
+<tt class="descclassname">any_ldm.</tt><tt class="descname">getParameterName</tt><big>(</big><big>)</big><a class="headerlink" href="#lens_distortion_plugins.any_ldm.getParameterName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Signature: getParameterName(i) -&gt; string.
+Name of i-th model-specific parameter</p>
+</dd></dl>
+
+</div>
+<div class="section" id="parameter-types">
+<h1>Parameter types<a class="headerlink" href="#parameter-types" title="Permalink to this headline">¶</a></h1>
+<p>In 3DE4 each parameter of a lens distortion model (built-in or plugin) is represented
+by a widget in Attribute Editor -&gt; Lenses -&gt; Lens Distortion. There are six different
+widget types, and they are represented by the following symbolic (and numeric) values:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">ldp</span><span class="o">.</span><span class="n">TDE4_LDP_STRING</span>
+<span class="go">0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">ldp</span><span class="o">.</span><span class="n">TDE4_LDP_DOUBLE</span>
+<span class="go">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">ldp</span><span class="o">.</span><span class="n">TDE4_LDP_INT</span>
+<span class="go">2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">ldp</span><span class="o">.</span><span class="n">TDE4_LDP_FILE</span>
+<span class="go">3</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">ldp</span><span class="o">.</span><span class="n">TDE4_LDP_TOGGLE</span>
+<span class="go">4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">ldp</span><span class="o">.</span><span class="n">TDE4_LDP_ADJUSTABLE_DOUBLE</span>
+<span class="go">5</span>
+</pre></div>
+</div>
+<p>Instead of strings we prefer to have the same numeric values here as we have in C++.
+The type of a parameter is determined by</p>
+<dl class="method">
+<dt id="lens_distortion_plugins.any_ldm.getParameterType">
+<tt class="descclassname">any_ldm.</tt><tt class="descname">getParameterType</tt><big>(</big><big>)</big><a class="headerlink" href="#lens_distortion_plugins.any_ldm.getParameterType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Signature: getParameterType(name) -&gt; int.
+Type of parameter</p>
+</dd></dl>
+
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">ldm</span> <span class="o">=</span> <span class="n">ldp</span><span class="o">.</span><span class="n">anamorphic_deg_6</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">ldm</span><span class="o">.</span><span class="n">getParameterType</span><span class="p">(</span><span class="s">&quot;Cx02 - Degree 2&quot;</span><span class="p">)</span>
+<span class="go">5</span>
+</pre></div>
+</div>
+<p>The return value is one of the constants mentioned above.</p>
+</div>
+<div class="section" id="default-value">
+<h1>Default value<a class="headerlink" href="#default-value" title="Permalink to this headline">¶</a></h1>
+<p>Each parameter has a default value. The default value is retrieved using the method</p>
+<dl class="method">
+<dt id="lens_distortion_plugins.any_ldm.getParameterDefaultValue">
+<tt class="descclassname">any_ldm.</tt><tt class="descname">getParameterDefaultValue</tt><big>(</big><big>)</big><a class="headerlink" href="#lens_distortion_plugins.any_ldm.getParameterDefaultValue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Signature: getParameterDefaultValue(name) -&gt; one of double,int,string,bool.
+Default value of parameter</p>
+</dd></dl>
+
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">ldm</span> <span class="o">=</span> <span class="n">ldp</span><span class="o">.</span><span class="n">anamorphic_deg_4_rotate_squeeze_xy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">ldm</span><span class="o">.</span><span class="n">getParameterDefaultValue</span><span class="p">(</span><span class="s">&quot;Squeeze-X&quot;</span><span class="p">)</span>
+<span class="go">1.0</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="range">
+<h1>Range<a class="headerlink" href="#range" title="Permalink to this headline">¶</a></h1>
+<p>Parameters of type ADJUSTABLE_DOUBLE have range values which describe the possible values
+of the parameter. The range values are not strict mathematical limits, they are more some kind of
+hints for 3DE4&#8217;s optimization algorithms.</p>
+<dl class="method">
+<dt id="lens_distortion_plugins.any_ldm.getParameterRange">
+<tt class="descclassname">any_ldm.</tt><tt class="descname">getParameterRange</tt><big>(</big><big>)</big><a class="headerlink" href="#lens_distortion_plugins.any_ldm.getParameterRange" title="Permalink to this definition">¶</a></dt>
+<dd><p>Signature: getParameterRange(name) -&gt; (double,double).
+Typical/Strict range of parameter</p>
+</dd></dl>
+
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">ldm</span> <span class="o">=</span> <span class="n">ldp</span><span class="o">.</span><span class="n">radial_decentered_deg_4_cylindric</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">ldm</span><span class="o">.</span><span class="n">getParameterRange</span><span class="p">(</span><span class="s">&quot;Phi - Cylindric Direction&quot;</span><span class="p">)</span>
+<span class="go">(-90.0, 90.0)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="setting-parameter-values">
+<h1>Setting parameter values<a class="headerlink" href="#setting-parameter-values" title="Permalink to this headline">¶</a></h1>
+<p>There are four methods for setting parameter values individually.</p>
+<dl class="method">
+<dt id="lens_distortion_plugins.any_ldm.setParameterValueDouble">
+<tt class="descclassname">any_ldm.</tt><tt class="descname">setParameterValueDouble</tt><big>(</big><big>)</big><a class="headerlink" href="#lens_distortion_plugins.any_ldm.setParameterValueDouble" title="Permalink to this definition">¶</a></dt>
+<dd><p>Signature: setParameterValueDouble(name,value) -&gt; None.
+Set value of parameter. The parameter is addressed by its name. This can be one of the seven built-in parameters or one of the model-specific ones. Please note, that all length-unit parameters are given in centimeter.</p>
+</dd></dl>
+
+<p>Parameters of types TDE4_LDP_DOUBLE and TDE4_LDP_ADJUSTABLE_DOUBLE must be set
+with this method. The seven built-in parameters are of type TDE4_LDP_DOUBLE:</p>
+<ul class="simple">
+<li>tde4_focal_length_cm</li>
+<li>tde4_filmback_width_cm</li>
+<li>tde4_filmback_height_cm</li>
+<li>tde4_lens_center_offset_x_cm</li>
+<li>tde4_lens_center_offset_y_cm</li>
+<li>tde4_pixel_aspect</li>
+<li>tde4_focus_distance_cm</li>
+</ul>
+<dl class="method">
+<dt id="lens_distortion_plugins.any_ldm.setParameterValueBool">
+<tt class="descclassname">any_ldm.</tt><tt class="descname">setParameterValueBool</tt><big>(</big><big>)</big><a class="headerlink" href="#lens_distortion_plugins.any_ldm.setParameterValueBool" title="Permalink to this definition">¶</a></dt>
+<dd><p>Signature: setParameterValueBool(name,value) -&gt; None.
+Set value of parameter.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="lens_distortion_plugins.any_ldm.setParameterValueInt">
+<tt class="descclassname">any_ldm.</tt><tt class="descname">setParameterValueInt</tt><big>(</big><big>)</big><a class="headerlink" href="#lens_distortion_plugins.any_ldm.setParameterValueInt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Signature: setParameterValueInt(name,value) -&gt; None.
+Set value of parameter.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="lens_distortion_plugins.any_ldm.setParameterValueString">
+<tt class="descclassname">any_ldm.</tt><tt class="descname">setParameterValueString</tt><big>(</big><big>)</big><a class="headerlink" href="#lens_distortion_plugins.any_ldm.setParameterValueString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Signature: setParameterValueString(name,value) -&gt; None.
+Set value of parameter.</p>
+</dd></dl>
+
+<p>The following methods allow to set and get the seven built-in camera parameters:</p>
+<dl class="method">
+<dt id="lens_distortion_plugins.any_ldm.setCamera">
+<tt class="descclassname">any_ldm.</tt><tt class="descname">setCamera</tt><big>(</big><big>)</big><a class="headerlink" href="#lens_distortion_plugins.any_ldm.setCamera" title="Permalink to this definition">¶</a></dt>
+<dd><p>Signature: setCamera(double,double,double,double,double,double,double) -&gt; None.
+Convenience function for setting all seven built-in camera parameters at once. The parameters are (in this order): focal length [cm], filmback width [cm], filmback height [cm], lens center offset x [cm], lens center offset y [cm], pixel aspect, focus distance [cm]. If focus distance is not relevant, it should be set to some non-zero value, say 100 (cm). Currently, no error-checking is done. initializeParameters() is called implicitly.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="lens_distortion_plugins.any_ldm.getCamera">
+<tt class="descclassname">any_ldm.</tt><tt class="descname">getCamera</tt><big>(</big><big>)</big><a class="headerlink" href="#lens_distortion_plugins.any_ldm.getCamera" title="Permalink to this definition">¶</a></dt>
+<dd><p>Signature: getCamera() -&gt; (double,double,double,double,double,double,double).
+This method returns the seven built-in camera parameters at once. The parameters are (in this order): focal length [cm], filmback width [cm], filmback height [cm], lens center offset x [cm], lens center offset y [cm], pixel aspect, focus distance [cm].</p>
+</dd></dl>
+
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">lens_distortion_plugins</span> <span class="kn">as</span> <span class="nn">ldp</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ldm</span> <span class="o">=</span> <span class="n">ldp</span><span class="o">.</span><span class="n">radial_decentered_deg_4_cylindric</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ldm</span><span class="o">.</span><span class="n">setCamera</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">0.8</span><span class="p">,</span><span class="mf">0.6</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">100.0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">ldm</span><span class="o">.</span><span class="n">getCamera</span><span class="p">()</span>
+<span class="go">(1.0, 0.8, 0.6, 0.1, 0.1, 1.0, 100.0)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="initializing-for-usage">
+<h1>Initializing for usage<a class="headerlink" href="#initializing-for-usage" title="Permalink to this headline">¶</a></h1>
+<p>When all parameters are set, the instance needs to be initialized for usage. This is done by:</p>
+<dl class="method">
+<dt id="lens_distortion_plugins.any_ldm.initializeParameters">
+<tt class="descclassname">any_ldm.</tt><tt class="descname">initializeParameters</tt><big>(</big><big>)</big><a class="headerlink" href="#lens_distortion_plugins.any_ldm.initializeParameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Signature: initializeParameters() -&gt; None.
+Initialize what -er- needs to be initialized (after modifying parameters, important)</p>
+</dd></dl>
+
+</div>
+<div class="section" id="remove-and-apply-lens-distortion">
+<h1>Remove and apply lens distortion<a class="headerlink" href="#remove-and-apply-lens-distortion" title="Permalink to this headline">¶</a></h1>
+<dl class="method">
+<dt id="lens_distortion_plugins.any_ldm.undistort">
+<tt class="descclassname">any_ldm.</tt><tt class="descname">undistort</tt><big>(</big><big>)</big><a class="headerlink" href="#lens_distortion_plugins.any_ldm.undistort" title="Permalink to this definition">¶</a></dt>
+<dd><p>Signature: undistort((x,y)) -&gt; (double,double).
+remove distortion for point (x,y). The point (x,y) is specified in unit coordinates [0,1]x[0,1], which correspond to the filmback. Please consult the ldpk-documentation for details.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="lens_distortion_plugins.any_ldm.distort">
+<tt class="descclassname">any_ldm.</tt><tt class="descname">distort</tt><big>(</big><big>)</big><a class="headerlink" href="#lens_distortion_plugins.any_ldm.distort" title="Permalink to this definition">¶</a></dt>
+<dd><p>Signature: distort((x,y)) -&gt; (double,double).
+apply distortion for point (x,y). Inverse function of undistort(). Usually, this function is iterative, while undistort() is not (i.e. it&#8217;s slower).</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bounding-box">
+<h1>Bounding box<a class="headerlink" href="#bounding-box" title="Permalink to this headline">¶</a></h1>
+<p>There are methods for getting the bounding box for the undistort- and the distort-function.
+These methods are quite simple, they surround the domain of the function with some predefined
+sample density and accumulate minimum and maximum function values. So, please do not expect
+them to deliver values at precision 1e-15...</p>
+<dl class="method">
+<dt id="lens_distortion_plugins.any_ldm.getBoundingBoxUndistort">
+<tt class="descclassname">any_ldm.</tt><tt class="descname">getBoundingBoxUndistort</tt><big>(</big><big>)</big><a class="headerlink" href="#lens_distortion_plugins.any_ldm.getBoundingBoxUndistort" title="Permalink to this definition">¶</a></dt>
+<dd><p>Signature: getBoundingBoxUndistort(double xa,double ya,double xb,double yb,int nx=32,int ny=32) -&gt; (double xa_out,double ya_out,double xb_out,double yb_out).
+Bounding box resulting from undistorting the rectangle [xa,ya]x[xb,yb]. The return value is the bounding box (xa_out,ya_out),(xb_out,yb_out).By default, the edges of the rectangle are scanned at nx+1 points horizontally and ny+1 points vertically.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="lens_distortion_plugins.any_ldm.getBoundingBoxDistort">
+<tt class="descclassname">any_ldm.</tt><tt class="descname">getBoundingBoxDistort</tt><big>(</big><big>)</big><a class="headerlink" href="#lens_distortion_plugins.any_ldm.getBoundingBoxDistort" title="Permalink to this definition">¶</a></dt>
+<dd><p>Signature: getBoundingBoxDistort(double xa,double ya,double xb,double yb,int nx=32,int ny=32) -&gt; (double xa_out,double ya_out,double xb_out,double yb_out).
+Bounding box resulting from distorting the rectangle [xa,ya]x[xb,yb]. The return value is the bounding box (xa_out,ya_out),(xb_out,yb_out). By default, the edges of the rectangle are scanned at nx+1 points horizontally and ny+1 points vertically.</p>
+</dd></dl>
+
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">ldm</span> <span class="o">=</span> <span class="n">ldp</span><span class="o">.</span><span class="n">radial_decentered_deg_4_cylindric</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ldm</span><span class="o">.</span><span class="n">setParameterValueDouble</span><span class="p">(</span><span class="s">&quot;tde4_focal_length_cm&quot;</span><span class="p">,</span><span class="mf">1.0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ldm</span><span class="o">.</span><span class="n">setParameterValueDouble</span><span class="p">(</span><span class="s">&quot;tde4_filmback_width_cm&quot;</span><span class="p">,</span><span class="mf">0.8</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ldm</span><span class="o">.</span><span class="n">setParameterValueDouble</span><span class="p">(</span><span class="s">&quot;tde4_filmback_height_cm&quot;</span><span class="p">,</span><span class="mf">0.6</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ldm</span><span class="o">.</span><span class="n">setParameterValueDouble</span><span class="p">(</span><span class="s">&quot;tde4_pixel_aspect&quot;</span><span class="p">,</span><span class="mf">1.0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ldm</span><span class="o">.</span><span class="n">setParameterValueDouble</span><span class="p">(</span><span class="s">&quot;Distortion - Degree 2&quot;</span><span class="p">,</span><span class="mf">0.1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ldm</span><span class="o">.</span><span class="n">initializeParameters</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">ldm</span><span class="o">.</span><span class="n">getBoundingBoxUndistort</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">(-0.050000000000000044, -0.050000000000000044, 1.05, 1.05)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">ldm</span><span class="o">.</span><span class="n">getBoundingBoxDistort</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">(0.027077570819212873, 0.016296699052012663, 0.9729224291807872, 0.9837033009479873)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="derivatives">
+<h1>Derivatives<a class="headerlink" href="#derivatives" title="Permalink to this headline">¶</a></h1>
+<p>The LDPK provides methods for accessing the Jacobian Matrix (first derivatives) and the so-called &#8220;Twist Vector&#8221; (mixed derivatives).
+The methods are:</p>
+<dl class="method">
+<dt id="lens_distortion_plugins.any_ldm.getJacobianMatrix">
+<tt class="descclassname">any_ldm.</tt><tt class="descname">getJacobianMatrix</tt><big>(</big><big>)</big><a class="headerlink" href="#lens_distortion_plugins.any_ldm.getJacobianMatrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Signature: getJacobianMatrix((x,y)) -&gt; (double,double,double,double).
+Jacobian for point (x,y). Result is (m00,m01,m10,m11) &lt;- this order. This is the Jacobian for the undistort-method, in unit coordinates [0,1]x[0,1].</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="lens_distortion_plugins.any_ldm.getTwistVector">
+<tt class="descclassname">any_ldm.</tt><tt class="descname">getTwistVector</tt><big>(</big><big>)</big><a class="headerlink" href="#lens_distortion_plugins.any_ldm.getTwistVector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Signature: getTwistVector((x,y)) -&gt; (double,double).
+Mixed Derivatives for point (x,y). Result is (t0,t1). These are the mixed derivatives for the undistort-method, in unit coordinates [0,1]x[0,1].</p>
+</dd></dl>
+
+<p>The derivatives are used in practice to build distortion nodes for compositing based on bicubic Hermite splices, like Nuke&#8217;s GridWarp.</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Python bindings for LDPK</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#classes">Classes</a></li>
+<li><a class="reference internal" href="#parameter-name">Parameter name</a></li>
+<li><a class="reference internal" href="#parameter-types">Parameter types</a></li>
+<li><a class="reference internal" href="#default-value">Default value</a></li>
+<li><a class="reference internal" href="#range">Range</a></li>
+<li><a class="reference internal" href="#setting-parameter-values">Setting parameter values</a></li>
+<li><a class="reference internal" href="#initializing-for-usage">Initializing for usage</a></li>
+<li><a class="reference internal" href="#remove-and-apply-lens-distortion">Remove and apply lens distortion</a></li>
+<li><a class="reference internal" href="#bounding-box">Bounding box</a></li>
+<li><a class="reference internal" href="#derivatives">Derivatives</a></li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li><a href="#">Python bindings for LDPK 1.7 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Uwe Sassenberg.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>

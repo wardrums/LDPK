@@ -1,0 +1,12 @@
+In order to compile C++ shared libraries please run script/makeall.csh
+In order to compile python bindings please modify script/make_python_bindings.csh
+according to your needs and run it.
+
+Doxygen documents start at doc/doxy/html/index.html
+
+White paper: doc/tex/...pdf
+
+Send questions and comments to uwe@sci-d-vis.com
+
+Thanks and good luck!
+

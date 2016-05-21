@@ -1,0 +1,11 @@
+<map id="tde4_ld_plugin" name="tde4_ld_plugin">
+<area shape="rect" id="node2" href="$classldpk_1_1ldp__builtin.html" title="ldpk::ldp_builtin\&lt;\l ldpk::vec2d, ldpk::\lmat2d \&gt;" alt="" coords="160,135,293,191"/>
+<area shape="rect" id="node3" href="$classldpk_1_1ldp__builtin.html" title="This class handles the built&#45;in parameter and the lookup table. You may find it useful for your own d..." alt="" coords="167,214,287,255"/>
+<area shape="rect" id="node4" href="$classtde4__ldp__all__par__types.html" title="Example plugin class containing one parameter of each type. The main purpose of this model is to test..." alt="" coords="375,5,529,46"/>
+<area shape="rect" id="node5" href="$classtde4__ldp__anamorphic__deg__4__rotate__squeeze__xy.html" title="tde4_ldp_anamorphic\l_deg_4_rotate_squeeze\l_xy\&lt; VEC2, MAT2 \&gt;" alt="" coords="372,69,532,125"/>
+<area shape="rect" id="node6" href="$classtde4__ldp__anamorphic__deg__6.html" title="Plugin class for anamorphic distortion. Does not compensate for decentering. Parameters can be calcul..." alt="" coords="369,149,535,190"/>
+<area shape="rect" id="node7" href="$classtde4__ldp__classic__3de__mixed.html" title="Degree&#45;2 anamorphic and degree&#45;4 radial mixed model. Does not compensate for decentering. Parameters can be calculated by 3DE&#39;s Matrix Tool. " alt="" coords="369,214,535,255"/>
+<area shape="rect" id="node8" href="$classtde4__ldp__radial__decentered__deg__4__cylindric.html" title="Plugin class for radial distortion with decentering and optional compensation for beam&#45;splitter artef..." alt="" coords="341,279,563,321"/>
+<area shape="rect" id="node9" href="$classtde4__ldp__radial__deg__8.html" title="Plugin class for radial distortion. Does not compensate for decentering. Parameters can be calculated..." alt="" coords="383,345,521,386"/>
+<area shape="rect" id="node10" href="$classtde4__ldp__radial__deg__8__release__1.html" title="Plugin class for radial distortion. Does not compensate for decentering. Parameters can be calculated..." alt="" coords="377,409,527,465"/>
+</map>

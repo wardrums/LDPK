@@ -1,0 +1,10 @@
+The Lens Distortion Plugin Kit is free software.
+All software is provided "as is" - no warranties implied.
+Please contact uwe@sci-d-vis.com, if you need this more explicit...
+
+All sources and documents (except for $LDPK/include/ldpk/tde4_ld_plugin.h)
+in this package were written by Uwe Sassenberg, Science-D-Visions, (c) 2011,2012,2013,2014,2015,2016.
+
+Additional code in $LDPK/source/ldpk/nuke_ld_3de4_base.C
+by David Cattermole and Ben Dickson, Rising Sun Pictures, 2016.
+

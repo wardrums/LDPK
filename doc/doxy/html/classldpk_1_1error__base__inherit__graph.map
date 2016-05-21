@@ -1,0 +1,9 @@
+<map id="ldpk::error_base" name="ldpk::error_base">
+<area shape="rect" id="node3" href="$classldpk_1_1error__could__not__read__parameter__name.html" title="Another parse error. " alt="" coords="322,5,481,46"/>
+<area shape="rect" id="node4" href="$classldpk_1_1error__could__not__read__value.html" title="A parse error. " alt="" coords="330,70,473,111"/>
+<area shape="rect" id="node5" href="$classldpk_1_1error__dynamic__link.html" title="An error occurred while loading or linking the plugin. " alt="" coords="320,136,483,163"/>
+<area shape="rect" id="node6" href="$classldpk_1_1error__end__of__stream.html" title="Unexpected end of stream. This can occur in ldpk::model_parser. " alt="" coords="338,187,465,229"/>
+<area shape="rect" id="node7" href="$classldpk_1_1error__index__out__of__range.html" title="Some index was out of range. " alt="" coords="330,253,473,294"/>
+<area shape="rect" id="node8" href="$classldpk_1_1error__no__model__specified.html" title="No model was set in one of the utility classes. " alt="" coords="330,318,473,359"/>
+<area shape="rect" id="node9" href="$classldpk_1_1error__undefined__parameter.html" title="Undefined parameter. " alt="" coords="330,383,473,425"/>
+</map>

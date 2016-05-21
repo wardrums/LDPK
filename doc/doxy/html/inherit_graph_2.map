@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classldpk_1_1extender__base.html" title="Base class of all extenders The concept of extenders as turned out to be useful in the new&#45;style dist..." alt="" coords="5,169,144,210"/>
+<area shape="rect" id="node2" href="$classldpk_1_1cylindric__extender.html" title="ldpk::cylindric_extender\l\&lt; VEC2, MAT2 \&gt;" alt="" coords="201,5,359,46"/>
+<area shape="rect" id="node3" href="$classldpk_1_1cylindric__extender__2.html" title="&quot;Symmetric&quot; version. Scaling by sqrt(1+b) in para&#45;direction and 1/sqrt(1+b) in ortho&#45;direction. The important thing is, that we have turned an almost&#45;symmetry into a perfect symmetry: phi &#45;&gt; phi + 90deg, b &#45;&gt; 1/b. The drawback is, that this models the curved beam splitter only if focal length is corrected slightly, by a factor sqrt(1+b). Nevertheless we are using this model in &quot;3DE4 Radial &#45; Standard, Degree 4&quot;. " alt="" coords="201,70,359,111"/>
+<area shape="rect" id="node4" href="$classldpk_1_1linear__extender.html" title="A general linear extender, based on a 2x2&#45;matrix. " alt="" coords="209,135,351,177"/>
+<area shape="rect" id="node5" href="$classldpk_1_1rotation__extender.html" title="The rotation extender simply rotates the incident ray around the optical axis. We need this e..." alt="" coords="203,201,357,242"/>
+<area shape="rect" id="node6" href="$classldpk_1_1squeeze__x__extender.html" title="The squeeze&#45;x/y&#45;extender scales the optical&#45;axis&#45;perpendicular coordinates of the incident ray toward..." alt="" coords="193,266,367,307"/>
+<area shape="rect" id="node7" href="$classldpk_1_1squeeze__y__extender.html" title="ldpk::squeeze_y_extender\l\&lt; VEC2, MAT2 \&gt;" alt="" coords="193,331,367,373"/>
+</map>

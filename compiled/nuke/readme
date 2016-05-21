@@ -1,0 +1,18 @@
+Installing plugins for Nuke
+---------------------------
+
+In order to install please copy the plugins to your $Nuke/plugins directory.
+The plugin LD_3DE4_All_Parameter_Types.* is only for testing purposes
+and should not be used.
+
+Also, to facilitate the workflow in Nuke, append these lines to $Nuke/plugins/menu.py
+The plugins will appear in submenu 3DE4 of the context menu in the node graph editor.
+
+################################################################
+# SDV-stuff
+
+nuke.menu("Nodes").addCommand("3DE4/LD_3DE4_Anamorphic_Standard_Degree_4", "nuke.createNode('LD_3DE4_Anamorphic_Standard_Degree_4')")
+nuke.menu("Nodes").addCommand("3DE4/LD_3DE4_Anamorphic_Degree_6", "nuke.createNode('LD_3DE4_Anamorphic_Degree_6')")
+nuke.menu("Nodes").addCommand("3DE4/LD_3DE4_Radial_Standard_Degree_4", "nuke.createNode('LD_3DE4_Radial_Standard_Degree_4')")
+nuke.menu("Nodes").addCommand("3DE4/LD_3DE4_Radial_Fisheye_Degree_8", "nuke.createNode('LD_3DE4_Radial_Fisheye_Degree_8')")
+nuke.menu("Nodes").addCommand("3DE4/LD_3DE_Classic_LD_Model", "nuke.createNode('LD_3DE_Classic_LD_Model')")

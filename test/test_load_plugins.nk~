@@ -1,0 +1,82 @@
+#! /server/software/linux64/nuke/Nuke6.2v4/Nuke6.2 -nx
+version 6.2 v4
+define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
+<layout version="1.0">
+    <window x="-7" y="14" w="1700" h="1066" screen="0">
+        <splitter orientation="1">
+            <split size="1062"></split>
+            <splitter orientation="1">
+                <split size="40"></split>
+                <dock id="" hideTitles="1" activePageId="Toolbar.1">
+                    <page id="Toolbar.1"></page>
+                </dock>
+                <split size="1018"></split>
+                <splitter orientation="2">
+                    <split size="496"></split>
+                    <dock id="" activePageId="Viewer.1">
+                        <page id="Viewer.1"></page>
+                    </dock>
+                    <split size="496"></split>
+                    <dock id="" activePageId="DAG.1">
+                        <page id="DAG.1"></page>
+                        <page id="Curve Editor.1"></page>
+                        <page id="DopeSheet.1"></page>
+                    </dock>
+                </splitter>
+            </splitter>
+            <split size="614"></split>
+            <dock id="" activePageId="Properties.1">
+                <page id="Properties.1"></page>
+            </dock>
+        </splitter>
+    </window>
+</layout>
+}
+Root {
+ inputs 0
+ name /server/devel/sdv/privat/uwe/source/ldpk/test/test_load_plugins.nk
+ format "2048 1556 0 0 2048 1556 1 2K_Super_35(full-ap)"
+ proxy_type scale
+ proxy_format "1024 778 0 0 1024 778 1 1K_Super_35(full-ap)"
+}
+Read {
+ inputs 0
+ file grid_1920x1080_plaid_24x24.png
+ format "1920 1080 0 0 1920 1080 1 HD"
+ origset true
+ name Read1
+ selected true
+ xpos -236
+ ypos -215
+}
+tde4_ldp_anamorphic_deg_4_rotate_squeeze_xy {
+ name tde4_ldp_anamorphic_deg_4_rotate_squeeze_xy1
+ xpos -364
+ ypos -87
+}
+tde4_ldp_anamorphic_deg_6 {
+ name tde4_ldp_anamorphic_deg_6_1
+ xpos -206
+ ypos -87
+}
+tde4_ldp_radial_deg_8 {
+ name tde4_ldp_radial_deg_8_1
+ xpos -60
+ ypos -87
+}
+tde4_ldp_radial_decentered_deg_4_cylindric {
+ name tde4_ldp_radial_decentered_deg_4_cylindric1
+ xpos 121
+ ypos -87
+}
+tde4_ldp_classic_3de_mixed {
+ name tde4_ldp_classic_3de_mixed1
+ xpos 289
+ ypos -87
+}
+Viewer {
+ input_process false
+ name Viewer1
+ xpos -9
+ ypos 90
+}

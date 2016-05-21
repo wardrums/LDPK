@@ -1,0 +1,174 @@
++-----------------------------------------------------------------------------------+
+|                    plugin: '3DE4 All Parameter Types [Plugin]'                    |
++---------------------------------+-------------------+---------------+-------------+
+|                           9 model-dependent parameters                            |
++---------------------------------+-------------------+---------------+-------------+
+| parameter                       | type              | default value | range       |
++---------------------------------+-------------------+---------------+-------------+
+| Par - Adjustable Double [Cx02]  | adjustable double | 0             | -0.5 to 0.5 |
+| Par - Adjustable Double [Cy02]  | adjustable double | 0             | -0.5 to 0.5 |
+| Par - Double [Cx22]             | double            | 0             |             |
+| Par - Double [Cy22]             | double            | 0             |             |
+| Par - String [Squeeze-X]        | string            | 1.0           |             |
+| Par - String [Squeeze-Y]        | string            | 1.0           |             |
+| Par - File [Debug Output]       | file              | test.txt      |             |
+| Par - Toggle [Debugging On/Off] | toggle            | false         |             |
+| Par - Int [Dunno]               | int               | -1            |             |
++---------------------------------+-------------------+---------------+-------------+
++-------------------------------------------------------------------+
+|      plugin: '3DE4 Anamorphic - Standard, Degree 4 [Plugin]'      |
++-----------------+-------------------+---------------+-------------+
+|                   13 model-dependent parameters                   |
++-----------------+-------------------+---------------+-------------+
+| parameter       | type              | default value | range       |
++-----------------+-------------------+---------------+-------------+
+| Cx02 - Degree 2 | adjustable double | 0             | -0.5 to 0.5 |
+| Cy02 - Degree 2 | adjustable double | 0             | -0.5 to 0.5 |
+| Cx22 - Degree 2 | adjustable double | 0             | -0.5 to 0.5 |
+| Cy22 - Degree 2 | adjustable double | 0             | -0.5 to 0.5 |
+| Cx04 - Degree 4 | adjustable double | 0             | -0.5 to 0.5 |
+| Cy04 - Degree 4 | adjustable double | 0             | -0.5 to 0.5 |
+| Cx24 - Degree 4 | adjustable double | 0             | -0.5 to 0.5 |
+| Cy24 - Degree 4 | adjustable double | 0             | -0.5 to 0.5 |
+| Cx44 - Degree 4 | adjustable double | 0             | -0.5 to 0.5 |
+| Cy44 - Degree 4 | adjustable double | 0             | -0.5 to 0.5 |
+| Lens Rotation   | adjustable double | 0             | -2 to 2     |
+| Squeeze-X       | adjustable double | 1             | 0.9 to 1.1  |
+| Squeeze-Y       | adjustable double | 1             | 0.9 to 1.1  |
++-----------------+-------------------+---------------+-------------+
++-------------------------------------------------------------------+
+|           plugin: '3DE4 Anamorphic, Degree 6 [Plugin]'            |
++-----------------+-------------------+---------------+-------------+
+|                   18 model-dependent parameters                   |
++-----------------+-------------------+---------------+-------------+
+| parameter       | type              | default value | range       |
++-----------------+-------------------+---------------+-------------+
+| Cx02 - Degree 2 | adjustable double | 0             | -0.5 to 0.5 |
+| Cy02 - Degree 2 | adjustable double | 0             | -0.5 to 0.5 |
+| Cx22 - Degree 2 | adjustable double | 0             | -0.5 to 0.5 |
+| Cy22 - Degree 2 | adjustable double | 0             | -0.5 to 0.5 |
+| Cx04 - Degree 4 | adjustable double | 0             | -0.5 to 0.5 |
+| Cy04 - Degree 4 | adjustable double | 0             | -0.5 to 0.5 |
+| Cx24 - Degree 4 | adjustable double | 0             | -0.5 to 0.5 |
+| Cy24 - Degree 4 | adjustable double | 0             | -0.5 to 0.5 |
+| Cx44 - Degree 4 | adjustable double | 0             | -0.5 to 0.5 |
+| Cy44 - Degree 4 | adjustable double | 0             | -0.5 to 0.5 |
+| Cx06 - Degree 6 | adjustable double | 0             | -0.5 to 0.5 |
+| Cy06 - Degree 6 | adjustable double | 0             | -0.5 to 0.5 |
+| Cx26 - Degree 6 | adjustable double | 0             | -0.5 to 0.5 |
+| Cy26 - Degree 6 | adjustable double | 0             | -0.5 to 0.5 |
+| Cx46 - Degree 6 | adjustable double | 0             | -0.5 to 0.5 |
+| Cy46 - Degree 6 | adjustable double | 0             | -0.5 to 0.5 |
+| Cx66 - Degree 6 | adjustable double | 0             | -0.5 to 0.5 |
+| Cy66 - Degree 6 | adjustable double | 0             | -0.5 to 0.5 |
++-----------------+-------------------+---------------+-------------+
++----------------------------------------------------------------------+
+|               plugin: '3DE Classic LD Model [Plugin]'                |
++--------------------+-------------------+---------------+-------------+
+|                     5 model-dependent parameters                     |
++--------------------+-------------------+---------------+-------------+
+| parameter          | type              | default value | range       |
++--------------------+-------------------+---------------+-------------+
+| Distortion         | adjustable double | 0             | -0.5 to 0.5 |
+| Anamorphic Squeeze | adjustable double | 1             | 0.25 to 4   |
+| Curvature X        | adjustable double | 0             | -0.5 to 0.5 |
+| Curvature Y        | adjustable double | 0             | -0.5 to 0.5 |
+| Quartic Distortion | adjustable double | 0             | -0.5 to 0.5 |
++--------------------+-------------------+---------------+-------------+
++---------------------------------------------------------------------------------+
+|               plugin: '3DE4 Radial - Standard, Degree 4 [Plugin]'               |
++-------------------------------+-------------------+---------------+-------------+
+|                          8 model-dependent parameters                           |
++-------------------------------+-------------------+---------------+-------------+
+| parameter                     | type              | default value | range       |
++-------------------------------+-------------------+---------------+-------------+
+| Distortion - Degree 2         | adjustable double | 0             | -0.5 to 0.5 |
+| U - Degree 2                  | adjustable double | 0             | -0.5 to 0.5 |
+| V - Degree 2                  | adjustable double | 0             | -0.5 to 0.5 |
+| Quartic Distortion - Degree 4 | adjustable double | 0             | -0.5 to 0.5 |
+| U - Degree 4                  | adjustable double | 0             | -0.5 to 0.5 |
+| V - Degree 4                  | adjustable double | 0             | -0.5 to 0.5 |
+| Phi - Cylindric Direction     | adjustable double | 0             | -90 to 90   |
+| B - Cylindric Bending         | adjustable double | 0             | -0.1 to 0.1 |
++-------------------------------+-------------------+---------------+-------------+
++---------------------------------------------------------------------------------+
+|               plugin: '3DE4 Radial - Fisheye, Degree 8 [Plugin]'                |
++-------------------------------+-------------------+---------------+-------------+
+|                          4 model-dependent parameters                           |
++-------------------------------+-------------------+---------------+-------------+
+| parameter                     | type              | default value | range       |
++-------------------------------+-------------------+---------------+-------------+
+| Distortion - Degree 2         | adjustable double | 0             | -0.5 to 0.5 |
+| Quartic Distortion - Degree 4 | adjustable double | 0             | -0.5 to 0.5 |
+| Degree 6                      | adjustable double | 0             | -0.5 to 0.5 |
+| Degree 8                      | adjustable double | 0             | -0.5 to 0.5 |
++-------------------------------+-------------------+---------------+-------------+
+3DE4 Anamorphic - Standard, Degree 4
+0: Cx02 - Degree 2, default: 0.0 , range:  (-0.5, 0.5)
+1: Cy02 - Degree 2, default: 0.0 , range:  (-0.5, 0.5)
+2: Cx22 - Degree 2, default: 0.0 , range:  (-0.5, 0.5)
+3: Cy22 - Degree 2, default: 0.0 , range:  (-0.5, 0.5)
+4: Cx04 - Degree 4, default: 0.0 , range:  (-0.5, 0.5)
+5: Cy04 - Degree 4, default: 0.0 , range:  (-0.5, 0.5)
+6: Cx24 - Degree 4, default: 0.0 , range:  (-0.5, 0.5)
+7: Cy24 - Degree 4, default: 0.0 , range:  (-0.5, 0.5)
+8: Cx44 - Degree 4, default: 0.0 , range:  (-0.5, 0.5)
+9: Cy44 - Degree 4, default: 0.0 , range:  (-0.5, 0.5)
+10: Lens Rotation, default: 0.0 , range:  (-2.0, 2.0)
+11: Squeeze-X, default: 1.0 , range:  (0.90000000000000002, 1.1000000000000001)
+12: Squeeze-Y, default: 1.0 , range:  (0.90000000000000002, 1.1000000000000001)
+----------------------------------------
+3DE4 Anamorphic, Degree 6
+0: Cx02 - Degree 2, default: 0.0 , range:  (-0.5, 0.5)
+1: Cy02 - Degree 2, default: 0.0 , range:  (-0.5, 0.5)
+2: Cx22 - Degree 2, default: 0.0 , range:  (-0.5, 0.5)
+3: Cy22 - Degree 2, default: 0.0 , range:  (-0.5, 0.5)
+4: Cx04 - Degree 4, default: 0.0 , range:  (-0.5, 0.5)
+5: Cy04 - Degree 4, default: 0.0 , range:  (-0.5, 0.5)
+6: Cx24 - Degree 4, default: 0.0 , range:  (-0.5, 0.5)
+7: Cy24 - Degree 4, default: 0.0 , range:  (-0.5, 0.5)
+8: Cx44 - Degree 4, default: 0.0 , range:  (-0.5, 0.5)
+9: Cy44 - Degree 4, default: 0.0 , range:  (-0.5, 0.5)
+10: Cx06 - Degree 6, default: 0.0 , range:  (-0.5, 0.5)
+11: Cy06 - Degree 6, default: 0.0 , range:  (-0.5, 0.5)
+12: Cx26 - Degree 6, default: 0.0 , range:  (-0.5, 0.5)
+13: Cy26 - Degree 6, default: 0.0 , range:  (-0.5, 0.5)
+14: Cx46 - Degree 6, default: 0.0 , range:  (-0.5, 0.5)
+15: Cy46 - Degree 6, default: 0.0 , range:  (-0.5, 0.5)
+16: Cx66 - Degree 6, default: 0.0 , range:  (-0.5, 0.5)
+17: Cy66 - Degree 6, default: 0.0 , range:  (-0.5, 0.5)
+----------------------------------------
+3DE4 Radial - Fisheye, Degree 8
+0: Distortion - Degree 2, default: 0.0 , range:  (-0.5, 0.5)
+1: Quartic Distortion - Degree 4, default: 0.0 , range:  (-0.5, 0.5)
+2: Degree 6, default: 0.0 , range:  (-0.5, 0.5)
+3: Degree 8, default: 0.0 , range:  (-0.5, 0.5)
+----------------------------------------
+3DE4 Radial - Standard, Degree 4
+0: Distortion - Degree 2, default: 0.0 , range:  (-0.5, 0.5)
+1: U - Degree 2, default: 0.0 , range:  (-0.5, 0.5)
+2: V - Degree 2, default: 0.0 , range:  (-0.5, 0.5)
+3: Quartic Distortion - Degree 4, default: 0.0 , range:  (-0.5, 0.5)
+4: U - Degree 4, default: 0.0 , range:  (-0.5, 0.5)
+5: V - Degree 4, default: 0.0 , range:  (-0.5, 0.5)
+6: Phi - Cylindric Direction, default: 0.0 , range:  (-90.0, 90.0)
+7: B - Cylindric Bending, default: 0.0 , range:  (-0.10000000000000001, 0.10000000000000001)
+----------------------------------------
+3DE Classic LD Model
+0: Distortion, default: 0.0 , range:  (-0.5, 0.5)
+1: Anamorphic Squeeze, default: 1.0 , range:  (0.25, 4.0)
+2: Curvature X, default: 0.0 , range:  (-0.5, 0.5)
+3: Curvature Y, default: 0.0 , range:  (-0.5, 0.5)
+4: Quartic Distortion, default: 0.0 , range:  (-0.5, 0.5)
+----------------------------------------
+3DE4 All Parameter Types
+0: Par - Adjustable Double [Cx02], default: 0.0 , range:  (-0.5, 0.5)
+1: Par - Adjustable Double [Cy02], default: 0.0 , range:  (-0.5, 0.5)
+2: Par - Double [Cx22], default: 0.0
+3: Par - Double [Cy22], default: 0.0
+4: Par - String [Squeeze-X], default: 1.0
+5: Par - String [Squeeze-Y], default: 1.0
+6: Par - File [Debug Output], default: test.txt
+7: Par - Toggle [Debugging On/Off], default: False
+8: Par - Int [Dunno], default: -1
+----------------------------------------

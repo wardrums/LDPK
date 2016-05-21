@@ -1,0 +1,10 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$classldpk_1_1error__base.html" title="Base class for errors. " alt="" coords="133,195,248,221"/>
+<area shape="rect" id="node3" href="$classldpk_1_1error__could__not__read__parameter__name.html" title="Another parse error. " alt="" coords="298,5,457,46"/>
+<area shape="rect" id="node4" href="$classldpk_1_1error__could__not__read__value.html" title="A parse error. " alt="" coords="306,70,449,111"/>
+<area shape="rect" id="node5" href="$classldpk_1_1error__dynamic__link.html" title="An error occurred while loading or linking the plugin. " alt="" coords="296,136,459,163"/>
+<area shape="rect" id="node6" href="$classldpk_1_1error__end__of__stream.html" title="Unexpected end of stream. This can occur in ldpk::model_parser. " alt="" coords="314,187,441,229"/>
+<area shape="rect" id="node7" href="$classldpk_1_1error__index__out__of__range.html" title="Some index was out of range. " alt="" coords="306,253,449,294"/>
+<area shape="rect" id="node8" href="$classldpk_1_1error__no__model__specified.html" title="No model was set in one of the utility classes. " alt="" coords="306,318,449,359"/>
+<area shape="rect" id="node9" href="$classldpk_1_1error__undefined__parameter.html" title="Undefined parameter. " alt="" coords="306,383,449,425"/>
+</map>
